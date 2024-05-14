@@ -11,7 +11,8 @@ const mongoose = require("mongoose");
 
 // module.exports = { mongoose, connectedToMongoDB};
 
-mongoose.connect("mongodb://localhost:27017/employee_db", {
+mongoose.connect("mongodb+srv://mrudhulashrimanikantan:mrudhulashrimanikantan@cluster1.gldpvtu.mongodb.net/employeedb", {
+    useNewUrlParser: true, useUnifiedTopology: true 
 });
 
 mongoose.connection.on("connected", () => {
